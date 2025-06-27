@@ -54,5 +54,5 @@ author_profile: true
 не твоята обида.
 
 <p align="center">
-  <img src="/assets/images/svetulki.jpg" alt="Светулки" width="300" height="250"/>
+  <img src="{{ site.baseurl }}/assets/images/svetulki.jpg" width="300" height="250" alt="Светулки">
 </p>
