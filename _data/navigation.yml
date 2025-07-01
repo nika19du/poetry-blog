@@ -10,3 +10,6 @@ main:
 
   - title: "Архив по дати"
     url: /archive/
+
+  - title: "Календар"
+    url: /calendar/
