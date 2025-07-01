@@ -81,3 +81,29 @@
     color: #666;
     margin-top: 4px;
   }
+
+/* Мобилна адаптация */
+@media (max-width: 768px) {
+  .calendar th,
+  .calendar td {
+    font-size: 0.65rem;
+    padding: 4px;
+  }
+
+  #calendar-nav button {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  .post-title {
+    font-size: 0.65rem;
+  }
+
+  #calendar-title {
+    font-size: 0.95rem;
+  }
+
+  #post-preview h3 {
+    font-size: 1rem;
+  }
+}
