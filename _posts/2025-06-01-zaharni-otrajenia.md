@@ -1,8 +1,8 @@
 ---
 title: "Захарни отражения и прашни истини."
 date: 2025-06-01
-categories: [поезия]
-tags: [лично, емоции, сянка, тъга, метафора]
+categories: [природа]
+tags: [лично, метафора]
 layout: single
 author_profile: true
 ---
