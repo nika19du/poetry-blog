@@ -2,7 +2,7 @@
 title: "Съхрани се"
 date: 2025-07-04
 categories: [вътрешни монолози]
-tags: [тъга, грешки]
+tags: [чест]
 layout: single
 author_profile: true
 ---
