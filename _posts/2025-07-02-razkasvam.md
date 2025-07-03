@@ -2,7 +2,7 @@
 title: "Разкървено се разкъсвам"
 date: 2025-07-02
 categories: [вътрешни монолози]
-tags: [тъга, грешки]
+tags: [интроспекция, дерзания, тъга, грешки]
 layout: single
 author_profile: true
 ---

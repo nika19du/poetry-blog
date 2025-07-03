@@ -26,3 +26,38 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("toggle-tags");
+        const hiddenTags = document.querySelectorAll(".hidden-tag");
+        const searchInput = document.getElementById("tag-search");
+        const allTags = document.querySelectorAll(".tag-button");
+
+        let expanded = false;
+
+        if (toggleBtn) {
+          toggleBtn.addEventListener("click", function () {
+            hiddenTags.forEach(tag => {
+              tag.style.display = expanded ? "none" : "inline-block";
+            });
+            toggleBtn.textContent = expanded ? "Покажи още" : "Скрий";
+            expanded = !expanded;
+          });
+        }
+
+        if (searchInput) {
+          searchInput.addEventListener("input", function () {
+            const term = searchInput.value.toLowerCase();
+
+            allTags.forEach(tag => {
+              const tagName = tag.getAttribute("data-tag");
+              if (tagName.includes(term)) {
+                tag.style.display = "inline-block";
+              } else {
+                tag.style.display = "none";
+              }
+            });
+          });
+        }
+      });
+    </script>

@@ -114,14 +114,14 @@ analytics:
 # Site Author
 author:
   name             : "Никол Янкова"
-  avatar           : "/assets/images/me.jfif"
-  bio              : "Пиша, за да запазя.\n \n За да се върна при себе си."
+  avatar           : "/assets/images/me.jpg"
+  bio              : "Пиша, за да се върна при себе си."
   location         : "Хисаря"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "qnkovanikol29@gmail.com"
+      url: "contacts"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"

@@ -1,7 +1,7 @@
 ---
 title: "16 юни"
 date: 2025-06-16
-categories: [поезия]
+categories: [поезия, вътрешни монолози]
 tags: [лично, емоции, връзка, тъга, метафора]
 layout: single
 author_profile: true

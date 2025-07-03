@@ -2,6 +2,20 @@
 layout: archive
 ---
 
-{{ content }}
+<ul>
+  {% assign tags_list = site.tags | sort %}
+  {% for tag in tags_list %}
+  <li><a href="#{{ tag[0] }}">{{ tag[0] }} ({{ tag[1].size }})</a></li>
+  {% endfor %}
+</ul>
 
-{% include posts-taxonomy.html taxonomies=site.tags %}
+<hr />
+
+{% for tag in tags_list %}
+<h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+<ul>
+  {% for post in tag[1] %}
+  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}

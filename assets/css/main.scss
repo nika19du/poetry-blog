@@ -7,3 +7,129 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.page__tags a {
+  display: inline-block;
+  background: #eaeaea;
+  padding: 3px 8px;
+  margin: 0 5px 5px 0;
+  border-radius: 12px;
+  font-size: 0.85em;
+  text-decoration: none;
+  color: #333;
+}
+
+.page__tags a:hover {
+  background: #d0d0d0;
+}
+
+.archive__item-tags a {
+  background: #eee;
+  padding: 2px 8px;
+  margin-right: 5px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #333;
+}
+
+.archive__item-tags a:hover {
+  background: #ddd;
+}
+
+.tag-filter {
+  margin-bottom: 2em;
+}
+
+.tag-button {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #333;
+  padding: 5px 10px;
+  margin: 4px 6px 4px 0;
+  border-radius: 15px;
+  font-size: 0.85em;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.tag-button:hover {
+  background: #ccc;
+  color: black;
+}
+.tag-filter-sidebar a,
+.category-filter-sidebar a {
+  display: inline-block;
+  background: #eee;
+  padding: 3px 8px;
+  margin: 4px 4px 4px 0;
+  border-radius: 12px;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #333;
+}
+
+.tag-filter-sidebar a:hover,
+.category-filter-sidebar a:hover {
+  background: #ccc;
+}
+
+.widget--filter {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+}
+
+.tag-filter-sidebar a,
+.category-filter-sidebar a {
+  display: inline-block;
+  background: #eee;
+  padding: 3px 8px;
+  margin: 4px 4px 4px 0;
+  border-radius: 12px;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #333;
+}
+
+.tag-filter-sidebar a:hover,
+.category-filter-sidebar a:hover {
+  background: #ccc;
+}
+
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #007acc;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 0.9em;
+  padding: 0;
+}
+
+.toggle-button:hover {
+  text-decoration: underline;
+}
+
+.tag-search-input {
+  width: 100%;
+  padding: 6px 10px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+.post-tags {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.post-tags a {
+  text-decoration: none;
+  margin-right: 5px;
+  color: #007acc;
+}

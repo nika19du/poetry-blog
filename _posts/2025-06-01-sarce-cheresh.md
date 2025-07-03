@@ -1,7 +1,7 @@
 ---
 title: "Сърцето на една череша."
 date: 2025-06-01
-categories: [поезия]
+categories: [поезия, свързване и любов]
 tags: [лично, емоции, сянка, тъга, метафора]
 layout: single
 author_profile: true
