@@ -6,9 +6,8 @@ tags: [лично, емоции, сянка, тъга, метафора]
 layout: single
 author_profile: true
 ---
+<div clas="poem">
 
-Сърцето на една череша  <br/>
- <br/>
 Имаше едно дърво в двора на училището. Череша. <br/>
 Растеше смело, клоните ѝ бяха стълби към приключения. <br/>
 Катерехме се с потайна радост и лек страх, че някой ще ни види. <br/>
@@ -34,5 +33,9 @@ author_profile: true
 Те помнят. <br/>
 Те обичат. <br/>
 
-![]({{ site.baseurl }}/assets/images/cheresh1.jpg){: width="300" }
-![]({{ site.baseurl }}/assets/images/cheresh2.jpg){: width="300" }
+</div>
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/images/cheresh1.jpg" alt="Дънер във формата на сърце" style="max-width: 90%; border-radius: 10px; margin: 1.5em;">
+  <img src="{{ site.baseurl }}/assets/images/cheresh2.jpg" alt="Спомен от черешата" style="max-width: 90%; border-radius: 10px; margin: 1.5em;">
+</p>

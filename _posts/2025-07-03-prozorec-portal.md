@@ -7,11 +7,13 @@ layout: single
 author_profile: true
 ---
 
-
-Безнадеждно гадая -<br/>
-дали гледа отвъд времето,<br/>
-като портал.<br/>
-Неугнетен, отминал,<br/>
-очаква своя зов.<br/>
-
-![]({{ site.baseurl }}/assets/images/prozorec-portal.jpg){: width="300" }
+<div class="poem">
+Безнадеждно гадая - 
+дали гледа отвъд времето,
+като портал.
+Неугнетен, отминал,
+очаква своя зов.
+</div>
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/images/prozorec-portal.jpg">
+</p>

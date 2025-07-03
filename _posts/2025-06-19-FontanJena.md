@@ -7,13 +7,18 @@ layout: single
 author_profile: true
 ---
 
-Фонтан от корени.<br/>
-Дървото продължава водата,<br/>
-или водата - дървото.<br/>
-<br/>
-Там, където се срещат<br/>
-кръвоносната система на земята<br/>
-и дъхът на небето.<br/>
+<div class="poem">
+Фонтан от корени.
+Дървото продължава водата,
+или водата - дървото.
 
-![Корицата]({{ site.baseurl }}/assets/images/golaJena1.jpg){: width="300" }
-![]({{ site.baseurl }}/assets/images/golaJena2.jpg){: width="300" }
+Там, където се срещат
+кръвоносната система на земята
+и дъхът на небето.
+
+</div>
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/images/golaJena1.jpg" />
+  <img src="{{ site.baseurl }}/assets/images/golaJena2.jpg" />
+</p>

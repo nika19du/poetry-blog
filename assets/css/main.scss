@@ -8,6 +8,36 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 18px; /* Увеличен размер */
+  line-height: 1.6; /* Разстояние между редовете */
+  color: #111; /* По-меко черно */
+  background-color: #f9f6f2; /* леко топъл фон (по избор) */
+  padding: 20px;
+}
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #aaa;
+}
+
+a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.post-title {
+  font-family: 'Merriweather', serif;
+  font-size: 28px;
+  margin-top: 0.5rem;
+}
+
 .page__tags a {
   display: inline-block;
   background: #eaeaea;
@@ -21,6 +51,16 @@ search: false
 
 .page__tags a:hover {
   background: #d0d0d0;
+}
+
+.page-content h1, .post-title, .page-title {
+  margin-top: 1.2rem; // Може и 1rem или по-малко
+  padding-top: 0;
+}
+
+.page-content {
+  margin-top: 0.5rem;
+  padding-top: 0 !important;
 }
 
 .archive__item-tags a {
@@ -132,4 +172,71 @@ search: false
   text-decoration: none;
   margin-right: 5px;
   color: #007acc;
+}
+
+.poem {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  line-height: 1.5; /* по-плътно */
+  margin-top: -10px;
+  text-align: center;
+  white-space: pre-line;
+}
+
+/*.poem {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  line-height: 1.8;
+  white-space: pre-line;
+  margin: 2em 0;
+  text-align: center;
+  color: #222;
+}*/
+
+ 
+.poem-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5em auto;
+  display: block;
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.95em;
+  color: #666;
+  margin-top: 1em;
+}
+
+.quote-section {
+  font-style: italic;
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 2em 1em;
+  text-align: justify;
+}
+
+blockquote {
+  border-left: 3px solid #ccc;
+  margin: 1em 0;
+  padding-left: 1em;
+  font-style: italic;
+  color: #444;
+}
+
+img {
+  display: block;
+/*  margin: 1.5em auto;
+*/  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+}
+
+hr {
+  width: 30%;
+  margin: 2em auto;
+  border: 1px solid #ccc;
 }
