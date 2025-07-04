@@ -6,11 +6,14 @@ tags: [чест]
 layout: single
 author_profile: true
 ---
-<div class="poem">
-
-Запази честта си и усмири сърцето си.
-Ще ни поучи времето.
-Спокойно и с вярва чакайте часът да дойде.
-(– Фридрих Шилер)
-
+<div class="poemKursiv">
+  <p>Запази честта си и усмири сърцето си.</p>
+  <p>Ще ни поучи времето.</p>
+  <p>Спокойно и с вярва чакайте частта да дойде.</p>
+  <p style="margin-top: 1em;">&mdash; Фридрих Шилер</p>
 </div>
+
+<video width="640" height="360" controls>
+  <source src="{{ site.baseurl }}/assets/videos/FriendsOfValiumForest_Tundra.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

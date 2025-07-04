@@ -240,3 +240,28 @@ hr {
   margin: 2em auto;
   border: 1px solid #ccc;
 }
+
+.poemKursiv {
+  font-style: italic;
+  font-family: "Georgia", serif;
+  text-align: center;
+  line-height: 1.8;
+  margin: 2em auto;
+  max-width: 600px;
+  color: #444;
+  background-color: #f9f9f9;
+  padding: 1em 1.5em;
+  border-left: 4px solid #ccc;
+  border-radius: 10px;
+}
+
+.poemKursiv {
+  opacity: 0;
+  animation: fadeInPoem 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInPoem {
+  to {
+    opacity: 1;
+  }
+}
