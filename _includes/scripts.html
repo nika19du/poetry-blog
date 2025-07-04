@@ -28,10 +28,11 @@
 {% endif %}
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        // ======= ДЕСКТОП =======
         const toggleBtn = document.getElementById("toggle-tags");
-        const hiddenTags = document.querySelectorAll(".hidden-tag");
+        const hiddenTags = document.querySelectorAll("#tag-container .hidden-tag");
         const searchInput = document.getElementById("tag-search");
-        const allTags = document.querySelectorAll(".tag-button");
+        const allTags = document.querySelectorAll("#tag-container .tag-button");
 
         let expanded = false;
 
@@ -50,6 +51,39 @@
             const term = searchInput.value.toLowerCase();
 
             allTags.forEach(tag => {
+              const tagName = tag.getAttribute("data-tag");
+              if (tagName.includes(term)) {
+                tag.style.display = "inline-block";
+              } else {
+                tag.style.display = "none";
+              }
+            });
+          });
+        }
+
+        // ======= МОБИЛНИ =======
+        const toggleMobile = document.getElementById("toggle-tags-mobile");
+        const hiddenTagsMobile = document.querySelectorAll("#tag-container-mobile .hidden-tag");
+        const searchInputMobile = document.getElementById("tag-search-mobile");
+        const allTagsMobile = document.querySelectorAll("#tag-container-mobile .tag-button");
+
+        let mobileExpanded = false;
+
+        if (toggleMobile) {
+          toggleMobile.addEventListener("click", function () {
+            hiddenTagsMobile.forEach(tag => {
+              tag.style.display = mobileExpanded ? "none" : "inline-block";
+            });
+            toggleMobile.textContent = mobileExpanded ? "Покажи още" : "Скрий";
+            mobileExpanded = !mobileExpanded;
+          });
+        }
+
+        if (searchInputMobile) {
+          searchInputMobile.addEventListener("input", function () {
+            const term = searchInputMobile.value.toLowerCase();
+
+            allTagsMobile.forEach(tag => {
               const tagName = tag.getAttribute("data-tag");
               if (tagName.includes(term)) {
                 tag.style.display = "inline-block";

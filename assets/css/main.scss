@@ -136,6 +136,28 @@ a:hover {
 .category-filter-sidebar a:hover {
   background: #ccc;
 }
+.tag-filter-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+
+.tag-filter-sidebar {
+  max-height: 300px;
+  overflow-y: auto;
+}
+footer {
+  z-index: 1;
+  position: relative;
+}
+
+.sidebar.sticky {
+  position: sticky;
+  top: 2rem;
+  overflow: visible;
+}
 
 
 .toggle-button {
@@ -277,4 +299,82 @@ hr {
   height: auto;
   display: block;
   border-radius: 8px;
+}
+
+.ese {
+  font-family: "Georgia", serif; /* по-литературен шрифт */
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: justify;
+  text-indent: 1.5em;
+  color: #333;
+}
+
+.ese img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+blockquote {
+  font-style: italic;
+  background: #f5f5f5;
+  padding: 1em;
+  border-left: 4px solid #999;
+  margin: 1.5em 0;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  text-align: right;
+}
+
+
+
+/* Падащи менюта само за мобилни */
+.mobile-filter {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 1em 0;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+.mobile-filter summary {
+  padding: 0.8em 1em;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.mobile-filter[open] summary {
+  border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+  .mobile-filter {
+    display: none;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .mobile-filter {
+    display: block;
+    margin-bottom: 1.5em;
+  }
+
+  .desktop-filter {
+    display: none;
+  }
+
+  .sidebar.sticky {
+    position: static;
+    top: auto;
+  }
 }

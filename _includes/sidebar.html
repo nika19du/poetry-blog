@@ -20,34 +20,69 @@
   {% endif %}
    
 <aside class="widget widget--filter">
-  <h4 style="margin-top: 2em;margin-bottom:10px;">Филтрирай по категория:</h4>
 
-  <div class="category-filter-sidebar">
-    {% assign cat_list = site.categories | sort %}
-    {% for category in cat_list %}
-    <a class="cat-button" href="{{ site.baseurl }}/categories/#{{ category[0] | slugify }}">{{ category[0] }} ({{ category[1].size }})</a>
-    {% endfor %}
+  <!-- Десктоп филтри -->
+  <div class="desktop-filter">
+    <h4 style="margin-top: 2em;margin-bottom:10px;">Филтрирай по категория:</h4>
+    <div class="category-filter-sidebar">
+      {% assign cat_list = site.categories | sort %}
+      {% for category in cat_list %}
+      <a class="cat-button" href="{{ site.baseurl }}/categories/#{{ category[0] | slugify }}">
+        {{ category[0] }} ({{ category[1].size }})
+      </a>
+      {% endfor %}
+    </div>
+
+    <h4>Филтрирай по етикет:</h4>
+    <input type="text" id="tag-search" placeholder="Търси етикет.." class="tag-search-input">
+    <div class="tag-filter-sidebar" id="tag-container">
+      {% assign tags_list = site.tags | sort %}
+      {% for tag in tags_list %}
+      <a class="tag-button{% if forloop.index > 5 %} hidden-tag{% endif %}"
+         style="{% if forloop.index > 5 %}display:none{% endif %}"
+         data-tag="{{ tag[0] | downcase }}"
+         href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}">
+        {{ tag[0] }} ({{ tag[1].size }})
+      </a>
+      {% endfor %}
+    </div>
+
+    {% if tags_list.size > 5 %}
+    <button id="toggle-tags" class="toggle-button" type="button">Покажи още</button>
+    {% endif %}
   </div>
 
-  <h4>Филтрирай по етикет:</h4>
-  <input type="text" id="tag-search" placeholder="Търси етикет.." class="tag-search-input">
+  <!-- Мобилни филтри -->
+  <details class="mobile-filter">
+    <summary>Филтрирай по категория</summary>
+    <div class="category-filter-sidebar">
+      {% assign cat_list = site.categories | sort %}
+      {% for category in cat_list %}
+      <a class="cat-button" href="{{ site.baseurl }}/categories/#{{ category[0] | slugify }}">
+        {{ category[0] }} ({{ category[1].size }})
+      </a>
+      {% endfor %}
+    </div>
+  </details>
 
-  <div class="tag-filter-sidebar" id="tag-container">
-    {% assign tags_list = site.tags | sort %}
-    {% for tag in tags_list %}
-    <a class="tag-button{% if forloop.index > 5 %} hidden-tag{% endif %}"
-       style="{% if forloop.index > 5 %}display:none{% endif %}"
-       data-tag="{{ tag[0] | downcase }}"
-       href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}">
-      {{ tag[0] }} ({{ tag[1].size }})
-    </a>
-    {% endfor %}
-  </div>
-
-  {% if tags_list.size > 5 %}
-  <button id="toggle-tags" class="toggle-button" type="button">Покажи още</button>
-  {% endif %}
-
+  <details class="mobile-filter">
+    <summary>Филтрирай по етикет</summary>
+    <input type="text" id="tag-search-mobile" placeholder="Търси етикет.." class="tag-search-input">
+    <div class="tag-filter-sidebar" id="tag-container-mobile">
+      {% assign tags_list = site.tags | sort %}
+      {% for tag in tags_list %}
+      <a class="tag-button{% if forloop.index > 5 %} hidden-tag{% endif %}"
+         style="{% if forloop.index > 5 %}display:none{% endif %}"
+         data-tag="{{ tag[0] | downcase }}"
+         href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}">
+        {{ tag[0] }} ({{ tag[1].size }})
+      </a>
+      {% endfor %}
+    </div>
+    {% if tags_list.size > 5 %}
+    <button id="toggle-tags-mobile" class="toggle-button" type="button">Покажи още</button>
+    {% endif %}
+  </details>
 
 </aside>
 </div>
