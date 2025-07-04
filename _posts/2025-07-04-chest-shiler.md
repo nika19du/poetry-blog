@@ -13,7 +13,9 @@ author_profile: true
   <p style="margin-top: 1em;">&mdash; Фридрих Шилер</p>
 </div>
 
-<video width="640" height="360" controls>
-  <source src="{{ site.baseurl }}/assets/videos/FriendsOfValiumForest_Tundra.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="videoWrapper">
+  <video controls>
+    <source src="{{ site.baseurl }}/assets/videos/FriendsOfValiumForest_Tundra.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>

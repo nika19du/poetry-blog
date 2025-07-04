@@ -265,3 +265,16 @@ hr {
     opacity: 1;
   }
 }
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.videoWrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}

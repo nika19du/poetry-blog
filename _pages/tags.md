@@ -1,5 +1,5 @@
 ---
 layout: tags
-title: "Тагове"
+title: "Етикети / ключови думи"
 permalink: /tags/
 ---
