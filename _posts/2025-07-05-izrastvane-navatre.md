@@ -2,7 +2,7 @@
 title: "Израстването ми се разраства навътре"
 date: 2025-07-05
 categories: [вътрешни монолози]
-tags: [чест]
+tags: [самоувереност, себеоткриване]
 layout: single
 author_profile: true
 ---

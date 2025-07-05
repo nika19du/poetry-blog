@@ -2,7 +2,7 @@
 title: "Бездна възмездна"
 date: 2025-07-05
 categories: [вътрешни монолози]
-tags: [чест]
+tags: [болка, уязвимост]
 layout: single
 author_profile: true
 ---

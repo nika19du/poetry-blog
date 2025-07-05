@@ -2,7 +2,7 @@
 title: "Заминах си мирно"
 date: 2025-07-05
 categories: [вътрешни монолози]
-tags: [чест]
+tags: [разочарование, граница]
 layout: single
 author_profile: true
 ---
