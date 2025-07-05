@@ -12,16 +12,18 @@
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
-
+    <button id="theme-toggle" aria-label="Превключи тема">
+      <span id="theme-icon">🌙</span>
+    </button>
     <div class="initial-content">
       {{ content }}
       {% include after-content.html %}
     </div>
 
     {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
+    <div class="search-content">
+      {% include_cached search/search_form.html %}
+    </div>
     {% endif %}
 
     <div id="footer" class="page__footer">
@@ -30,7 +32,34 @@
         {% include_cached footer.html %}
       </footer>
     </div>
+    <script>
+      const toggleButton = document.getElementById('theme-toggle');
+      const themeIcon = document.getElementById('theme-icon');
+      const body = document.body;
 
+      // При зареждане: ако е избран dark или системата е тъмна
+      if (
+        localStorage.getItem('theme') === 'dark' ||
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        body.classList.add('dark-mode');
+        themeIcon.textContent = '🌞';
+      } else {
+        themeIcon.textContent = '🌙';
+      }
+
+      // При натискане на бутона
+      toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+          localStorage.setItem('theme', 'dark');
+          themeIcon.textContent = '🌞';
+        } else {
+          localStorage.setItem('theme', 'light');
+          themeIcon.textContent = '🌙';
+        }
+      });
+    </script>
     {% include scripts.html %}
   </body>
 </html>

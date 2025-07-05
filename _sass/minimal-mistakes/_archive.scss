@@ -45,7 +45,10 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -60,6 +63,7 @@
     opacity: 0.5;
   }
 }
+
 
 /* remove border*/
 .page__content {

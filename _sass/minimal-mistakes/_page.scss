@@ -67,10 +67,15 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 
   a {
-    color: $text-color;
+    color: #6e4a2f;
     text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
   }
 
   & + .page__meta {
@@ -357,6 +362,10 @@ body {
 
   .archive__item-title {
     margin-top: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
   }
 
   .archive__subtitle {

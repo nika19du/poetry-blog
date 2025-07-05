@@ -12,8 +12,8 @@ body {
   font-family: 'Merriweather', serif;
   font-size: 18px; /* Увеличен размер */
   line-height: 1.6; /* Разстояние между редовете */
-  color: #111; /* По-меко черно */
-  background-color: #f9f6f2; /* леко топъл фон (по избор) */
+  background-color: #f0dfc7;
+  color: #2d2d2d;
   padding: 20px;
 }
 h1, h2, h3 {
@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #333;
+  color: #006699;
   text-decoration: none;
   border-bottom: 1px solid #aaa;
 }
@@ -204,6 +204,46 @@ footer {
   text-align: center;
   white-space: pre-line;
 }
+/*
+.poem2 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-style: italic;
+  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-left: 3px solid #ccc;
+  color: #333;
+  background-color: #fafafa;
+}*/
+
+.poem2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-style: italic;
+  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: #2c2c2c;
+  background-color: #fff9f0;
+  border-left: 4px solid #d9b382;
+  animation: fadeIn 1.2s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /*.poem {
   font-family: 'Merriweather', serif;
@@ -377,4 +417,66 @@ blockquote cite {
     position: static;
     top: auto;
   }
+}
+
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.archive__item-title a,
+.archive__item-excerpt,
+.taxonomy__item {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
+/* 🌙 Тъмен режим */
+body.dark-mode {
+  background-color: #202124;
+  color: #e0e0e0;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode a:hover {
+  color: #cde7ff;
+}
+
+body.dark-mode .poem, body.dark-mode .poem2 {
+  background-color: #2b2b2b;
+  color: #eaeaea;
+  border-left: 4px solid #5a5a5a;
+}
+
+/* Бутон за превключване */
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  color: #f0f0f0;
+}
+#theme-toggle:hover {
+  background-color: #444;
+}
+
+body.dark-mode .taxonomy__item {
+  background-color: #333;
+  color: #ddd;
+  border: 1px solid #444;
+}
+
+body.dark-mode .mobile-filter summary {
+  background-color: #333;
+  color: #ddd;
+  border: 1px solid #444;
+}
+
+
+body.dark-mode .page__title a {
+  color: #ddd;
 }
