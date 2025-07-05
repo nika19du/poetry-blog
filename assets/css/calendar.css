@@ -23,7 +23,8 @@
 
 #calendar-grid {
   flex: 1;
-  min-width: 600px;
+  min-width: 0; /* позволяваме му да се свие */
+  width: 100%;
 }
 
 #post-preview {
@@ -105,5 +106,34 @@
 
   #post-preview h3 {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-wrapper {
+    flex-direction: column;
+  }
+
+  #calendar-grid,
+  #post-preview {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  #post-preview {
+    margin-top: 1rem;
+  }
+
+  .calendar th,
+  .calendar td {
+    font-size: 0.7rem;
+    padding: 4px;
+    height: 60px;
+  }
+
+  .calendar .post-title {
+    font-size: 0.7rem;
   }
 }
