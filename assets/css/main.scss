@@ -297,6 +297,17 @@ img {
   border-radius: 8px;
 }
 
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-row img {
+  max-width: 45%;
+  height: auto;
+}
+
 .poemKursiv {
   font-style: italic;
   font-family: "Georgia", serif;
