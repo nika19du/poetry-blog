@@ -327,6 +327,18 @@ img {
   animation: fadeInPoem 1.5s ease-in-out forwards;
 }
 
+.poem-comment {
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+  background-color: #fdf8f3;
+  border-left: 4px solid #d6bfa5;
+  padding: 1em 1.2em;
+  margin-top: 2em;
+  color: #4b3e2e;
+}
+
 @keyframes fadeInPoem {
   to {
     opacity: 1;
