@@ -62,4 +62,9 @@ author_profile: true
 YOUniverse. <br/>
 
 <hr/>
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/images/zenici.jpg" />
+</p>
+
 </div>
