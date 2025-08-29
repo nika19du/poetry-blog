@@ -316,6 +316,8 @@ navigation:
 collections:
   posts:
     output: true
+  essays:
+    output: true
 
 # Defaults
 defaults:
