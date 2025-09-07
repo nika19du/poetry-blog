@@ -1,7 +1,7 @@
 ---
 title: "Празниците"
 date: 2025-09-06
-categories: [поезия, вътрешни монолози]
+categories: [поетично-есеистичен]
 tags: [нощни размисли]
 layout: single
 author_profile: true
